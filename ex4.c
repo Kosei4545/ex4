@@ -3,7 +3,7 @@
 #include<stdlib.h>
 #include<time.h>
 int main(){
-  char Hairetu[5][6],Dainyu[6];
+  char Hairetu[5][6],Dainyu[6],name[10];
   int i,number,headscounter=0,tailscounter=0;
 
   srand((unsigned int)time(NULL));
@@ -18,7 +18,9 @@ int main(){
       number=0;
     }
   }
-
+  printf("Who are you?\n");
+  scanf("%s",name);
+  printf("Hello, %s\n",name);
   printf("Tossing a coin\n");
   for(i=0;i<3;i++){
     strcpy(Dainyu,Hairetu[i]);
