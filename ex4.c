@@ -32,5 +32,10 @@ int main(){
     }
   }
   printf("Heads:%d, Tails:%d\n",headscounter,tailscounter);
+  if(headscounter>tailscounter){
+    printf("%s won\n",name);
+  }
+  else{ printf("%s lost\n",name);
+  }
 return 0;
 }
